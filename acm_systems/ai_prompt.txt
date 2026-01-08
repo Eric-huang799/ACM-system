@@ -1,0 +1,115 @@
+你是一位ACM竞赛教练，请严格根据以下任务评审用户代码：
+1. 简述题目核心要求（输入格式、输出格式、算法目标）。
+2. 分析用户代码是否满足题目：
+   - 能否通过样例？
+   - 是否处理边界情况？
+   - 是否有逻辑错误、数组越界等问题？
+3. 若正确：肯定优点 + 1-2条优化建议。
+4. 若错误：明确指出错误位置、原因、修复方法。
+5. 用一句鼓励的话结尾。
+6. 禁止：不要重写完整代码，不要说'我会这样写'。
+
+题目描述：输入两个整数，求这两个整数的和是多少。
+样例输入：3 4
+样例输出：7
+参考解析：
+[ID:1]
+[answer]
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", a + b);
+    return 0;
+}
+
+[分析] 
+这是一道入门题目，考察基础的输入输出和加法运算。
+核心思路：
+1. 使用scanf读取两个整数
+2. 计算它们的和
+3. 使用printf输出结果
+---
+[ID:2]
+[answer]
+#include<stdio.h>
+int main(){
+	int a,b,c;
+	scanf("%d %d",&a,&b);
+	c=a+b;
+	printf("%d",c);
+	return 0;
+}
+
+[分析] 
+1. 本题要求输入两个整数，并求这两整数的和，则本题的核心是读取两个
+整数并输出他们的和。
+2. 本题的解题思路为：首先通过 scanf 读取两个整数，然后对两个整数执行
+加法运算，最后通过 print 输出求和后的结果。
+---
+[ID:3]
+[answer]
+#include <stdio.h>
+#include <stdlib.h>
+#define MAXV 1000
+#define MAXN 1000
+int main(void)
+{
+    int N, V;
+    if (scanf("%d %d", &N, &V) != 2) return 0;
+
+    int vol[MAXN];
+    int val[MAXN];
+    for (int i = 0; i < N; ++i) {
+        scanf("%d %d", &vol[i], &val[i]);
+    }
+
+    int dp[MAXV + 1] = {0};
+
+    for (int i = 0; i < N; ++i) {
+        int w = vol[i];
+        int c = val[i];
+        for (int j = V; j >= w; --j) {
+            if (dp[j - w] + c > dp[j])
+                dp[j] = dp[j - w] + c;
+        }
+    }
+
+    printf("%d\n", dp[V]);
+    return 0;
+}
+
+[分析] 
+1. 本题要求每件物品仅能选择一次，需在背包容量 V 内，选择物品使得总
+价值最大。
+2. 定义一维数组 dp[V+1] ，dp[j] 表示背包容量为 j 时能装的最大价值，初始
+化为 0。对每件物品，从后往前遍历背包容量（避免重复选同一件物品）：
+dp[j] = \max(dp[j], dp[j - v_i] + w_i)其中 v_i 是第 i 件物品体积，w_i 是价值， 且 j \geq v_i。
+"用『阶段-状态-决策』的三层语言，把『每件物品只能选
+一次』翻译成最优化方程，再决定用记忆化搜索还是递推，最后用单调
+性优化。" 3. 输入：先读 N 和 V，再依次读 N 组 v_i 和 w_i。
+4. 输出：最终 dp[V] 即为最大价值。 
+---
+[ID:4]
+[answer]
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+char d[26] = {'V','W','X','Y','Z','A','B','C','D','E','F','G',
+'H','I','J','K','L','M','N','O','P','Q','R','S','T','U'};
+int main(void)
+{
+    char a[256], b[256], c[256];
+	while (fgets(a, sizeof(a), stdin),
+{
+
+用户代码：
+
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", a + b);
+    return 0;
+}
+

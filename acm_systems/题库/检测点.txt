@@ -1,0 +1,189 @@
+[ID:1]
+[input]
+abcde ace
+[output]
+3
+[input]
+abcdef abcdef
+[output]
+6
+[input]
+empty a
+[output]
+0
+[input]
+12345 67890
+[output]
+0
+
+[ID:2]
+[input]
+3 4
+[output]
+7
+[input]
+-10 -20
+[output]
+-30
+[input]
+0 -7
+[output]
+-7
+
+[ID:3]
+[input]
+4 5
+1 2
+2 4
+3 4
+4 5
+[output]
+8
+[input]
+1 3
+2 5
+[output]
+5
+[input]
+3 6
+2 3
+3 5
+4 6
+[output]
+9
+
+[ID:4]
+[input]
+START
+NS BFW, JAJSYX TK NRUTWYFSHJ FWJ YMJ WJXZQY TK YWNANFQ HFZXJX
+END
+START
+N BTZQI WFYMJW GJ KNWXY NS F QNYYQJ NGJWNFS ANQQFLJ YMFS XJHTSI NS WTRJ
+END
+START
+IFSLJW PSTBX KZQQ BJQQ YMFY HFJXFW NX RTWJ IFSLJWTZX YMFS MJ
+END
+ENDOFINPUT
+[output]
+IN WAR, EVENTS OF IMPORTANCE ARE THE RESULT OF TRIVIAL CAUSES
+I WOULD RATHER BE FIRST IN A LITTLE IBERIAN VILLAGE THAN SECOND IN ROME
+DANGER KNOWS FULL WELL THAT CAESAR IS MORE DANGEROUS THAN HE
+[input]
+START
+ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+END 
+ENDOFINPUT
+[output]
+VWXYZABCDEFGHIJKLMNOPQRSTU
+[input]
+START CAESAR IS GREAT!
+[output]
+VZNYOW DN LZWOY!
+
+[ID:5]
+[input]
+1 2 3 4
+[output]
+14
+[input]
+999 999 999 999
+[output]
+19996002
+[input]
+0 0 0 0
+[output]
+0
+
+[ID:6]
+[input]
+2
+[output]
+0 1 1 2 3
+[input]
+10
+[output]
+0 1 1 2 3 5 8 13 21 34
+[input]
+8
+[output]
+0 1 1 2 3 5 8 13
+
+[ID:7]
+[input]
+6
+8 8 7 3 7 7
+[output]
+3 7 8
+[input]
+5
+5 5 5 5 5 
+[output]
+5
+[input]
+7
+-3 2 -3 0 2 1 -1
+[output]
+-3 -1 0 1 2
+
+[ID:8]
+[input]
+.2738..1.
+.1..6735.
+......29.
+3.5692.8.
+........
+.6.1745.3
+64.......
+9518...7.
+.8..6534.
+[output]
+527389416
+819426735
+436751829
+375692184
+194538267
+268174593
+643217958
+951843672
+782965341
+[input]
+1........
+.2.......
+..3......
+...4.....
+....5....
+.....6...
+......7..
+.......8.
+........9
+[output]
+198765432
+427138956
+563294178
+231479865
+784526391
+956813724
+319642587
+672981453
+845372619	
+[input]
+........1
+........2
+........3
+........4
+........5
+........6
+........7
+........8
+........9
+[output]
+234567891
+345678912
+456789123
+567891234
+678912345
+789123456
+891234567
+912345678
+123456789	
+
